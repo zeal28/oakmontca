@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <!-- Main Custom Css -->
     <link href="css/custom.css" rel="stylesheet" media="screen" />
+    
   </head>
   <body class="tt-magic-cursor">
     <!-- Preloader Start -->
@@ -95,11 +96,11 @@
                       </li>
                     </ul>
                   </li>
-                  
+
                   <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
-                   
+
                   <li class="nav-item highlighted-menu">
                     <a class="nav-link" href="pricing.html">Book Now</a>
                   </li>
@@ -263,17 +264,12 @@
           <div class="col-lg-12">
             <!-- Contact Form Start -->
             <div class="contact-form wow fadeInUp" data-wow-delay="0.25s">
-              <form
-                id="contactForm"
-                action="#"
-                method="POST"
-                data-toggle="validator"
-              >
+              <form id="contactForm">
                 <div class="row">
                   <div class="form-group col-md-6 mb-4">
                     <input
                       type="text"
-                      name="fname"
+                      name="from_name"
                       class="form-control"
                       id="fname"
                       placeholder="first name"
@@ -285,7 +281,7 @@
                   <div class="form-group col-md-6 mb-4">
                     <input
                       type="text"
-                      name="lname"
+                      name="from_lastname"
                       class="form-control"
                       id="lname"
                       placeholder="last name"
@@ -297,7 +293,7 @@
                   <div class="form-group col-md-6 mb-4">
                     <input
                       type="email"
-                      name="email"
+                      name="from_email"
                       class="form-control"
                       id="email"
                       placeholder="email"
@@ -309,7 +305,7 @@
                   <div class="form-group col-md-6 mb-4">
                     <input
                       type="text"
-                      name="phone"
+                      name="from_phone"
                       class="form-control"
                       id="phone"
                       placeholder="Phone"
@@ -320,9 +316,9 @@
 
                   <div class="form-group col-md-12 mb-4">
                     <textarea
-                      name="msg"
+                      name="message"
                       class="form-control"
-                      id="msg"
+                      id="message"
                       rows="7"
                       placeholder="write a message"
                       required=""
@@ -330,11 +326,19 @@
                     <div class="help-block with-errors"></div>
                   </div>
 
+                  <!-- Hidden field for current date -->
+                  <input type="hidden" name="current_date" id="current_date" />
+
                   <div class="col-md-12">
-                    <button type="submit" class="btn-default">
+                    <button type="submit" class="btn-default" id="submitBtn">
                       submit now
                     </button>
-                    <div id="msgSubmit" class="h3 hidden"></div>
+                    <!-- Status Messages -->
+                    <div
+                      id="msgSubmit"
+                      class="h3"
+                      style="margin-top: 15px; display: none"
+                    ></div>
                   </div>
                 </div>
               </form>
@@ -518,6 +522,8 @@
     <script src="js/ScrollTrigger.min.js"></script>
     <!-- Wow js file -->
     <script src="js/wow.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
   </body>
