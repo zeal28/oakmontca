@@ -986,6 +986,7 @@ header.main-header {
 .why-choose-us.light-bg-section {
   padding: 100px 0 70px;
   margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .why-choose-image-box {
@@ -2638,6 +2639,10 @@ header.main-header {
 /***    21. Contact Us Page css   ***/
 /************************************/
 
+.contact-us.light-bg-section {
+  margin-bottom: 100px;
+}
+
 .contact-information {
   padding: 100px 0;
 }
@@ -3199,6 +3204,7 @@ header.main-header {
   .why-choose-us.light-bg-section {
     padding: 50px 0 20px;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
 
   .why-choose-image img {
@@ -3602,6 +3608,10 @@ header.main-header {
 
   .post-social-sharing {
     text-align: left;
+  }
+
+  .contact-us.light-bg-section {
+    margin-bottom: 50px;
   }
 
   .contact-information {
