@@ -1265,6 +1265,7 @@ header.main-header {
 
 .our-pricing.light-bg-section {
   padding: 100px 0 70px;
+  margin-bottom: 100px;
 }
 
 .pricing-item {
@@ -1855,6 +1856,10 @@ header.main-header {
   row-gap: 40px;
   align-items: center;
   justify-content: center;
+}
+
+.company-planning {
+  margin-top: 100px;
 }
 
 .company-planning-image {
@@ -3282,6 +3287,7 @@ header.main-header {
 
   .our-pricing.light-bg-section {
     padding: 50px 0 20px;
+    margin-bottom: 50px;
   }
 
   .pricing-item {
@@ -3443,6 +3449,10 @@ header.main-header {
   .client-logo {
     column-gap: 50px;
     row-gap: 30px;
+  }
+
+  .company-planning {
+    margin-top: 50px;
   }
 
   .company-planning-image {
