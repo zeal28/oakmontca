@@ -39,8 +39,8 @@
   --primary-color: #0c1524;
   --secondary-color: #f5f7fa;
   --text-color: #4a5567;
-  --accent-color: #ff8159;
-  /* --accent-color		: #0f3c51; */
+  /* --accent-color: #ff8159; */
+  --accent-color: #0f3c51;
   --divider-color: #dbdfea;
   --dark-divider-color: #ffffff30;
   --white-color: #ffffff;
@@ -210,7 +210,7 @@ body {
   height: 30px;
   border-radius: 8px;
   background-color: var(--white-color);
-  background-image: url(../images/arrow.svg);
+  background-image: url(../images/arrow-theme.svg);
   background-repeat: no-repeat;
   background-position: center center;
   transform: translate(-15px, -50%);
