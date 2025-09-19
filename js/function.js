@@ -462,13 +462,13 @@ function submitForm() {
       // Handle specific EmailJS errors
       if (error.text) {
         if (error.text.includes('quota') || error.text.includes('limit')) {
-          errorMessage = "❌ We've reached our monthly email limit. Please contact us directly at enquiries@oakmontca.com or call (+0) 123 456 789.";
+          errorMessage = "❌ We've reached our monthly email limit. Please contact us directly at enquiries@oakmontca.org or call (+0) 123 456 789.";
         } else if (error.text.includes('Invalid')) {
-          errorMessage = "❌ There's a configuration issue. Please contact us directly at enquiries@oakmontca.com.";
+          errorMessage = "❌ There's a configuration issue. Please contact us directly at enquiries@oakmontca.org.";
         } else if (error.text.includes('Network')) {
           errorMessage = "❌ Network error. Please check your internet connection and try again.";
         } else {
-          errorMessage = "❌ Sorry, there was a problem sending your message. Please try again later or contact us directly at enquiries@oakmontca.com.";
+          errorMessage = "❌ Sorry, there was a problem sending your message. Please try again later or contact us directly at enquiries@oakmontca.org.";
         }
       } else {
         errorMessage = "❌ Sorry, there was a problem sending your message. Please try again later.";
